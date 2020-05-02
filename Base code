@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+	char pass, word, check;
+	
+	printf("Create your password: ");
+	scanf("%c", &pass);
+	printf("Re-enter your password: ");
+	scanf(" %c", &word);
+	
+	if(pass == word)
+	{
+	
+	puts("Account sucessfully created\n");
+	puts("Redirecting.....");
+	getchar();
+	
+	printf("\n\tLogin to your account:\n Input password :");
+	scanf(" %c", &check);
+	
+	if(check == pass || check == word)
+	puts("\n  Welcome user");
+	else
+	puts("Incorrect password");
+	}
+	else
+	puts("\nBoth passwords don't match");
+	
+	return 0;
+}
+	
